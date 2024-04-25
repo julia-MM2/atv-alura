@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+
+.montserrat-<uniquifier> {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --cor-primaria: #000000;
+    --cor-secundaria: #F6F6F6;
+    --cor-terciaria: #22D4FD;
+    --cor-rover: #272727;
+
+    --fonte1:  "Krona One", sans-serif;
+    --fonte2:  "Montserrat", sans-serif;
+}
+
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    /* height: 100vh;  ocupa toda a tela */
+} 
+ 
+.cabecalho{
+    padding: 2% 0% 0% 15%;
+}
+.cab__menu{ 
+    display: flex;
+    gap: 80px;
+}
+.cab__link{
+    color: var(--cor-terciaria);
+    font-size: 18px;
+    font-family: var(--fonte1);
+    font-weight: 600px;
+    text-decoration: none;
+}
+
+.destaque-1 {
+    color: var(--cor-terciaria);  
+}
+.apresentacao {
+    padding: 13% 15%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+}
+.ap__cont {
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.ap__titulo {
+    font-size: 36px;
+    font-family:var(--fonte1);
+    font-weight: 400;
+    font-style: normal;
+}
+.ap__text{
+    font-size: 29px;
+    font-family: var(--fonte2);
+}
+.ap__botao{ 
+   flex-direction: column;
+   align-items: center;
+   gap: 30px;
+   display: flex;
+   justify-content: center;
+
+}
+.ap__links{
+    /* background-color: #2DD4FD; */
+    
+    width: 378px;
+    padding: 18px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 24px;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte2);
+    border: 3px solid var(--cor-terciaria);
+    gap: 16px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+
+
+}
+.sub__titulo{
+    font-family: var(--fonte1);
+    font-weight: 400;
+    font-size: 24px;
+
+}
+.ap__links:hover {
+    background-color: var(--cor-rover);
+}
+.rodape{
+    color: var(--cor-primaria);   
+    background-color: var(--cor-terciaria);
+    display: flex;
+    justify-content: center;
+    padding: 24px;
+    font-family:var(--fonte2);
+    font-weight: 300px;
+}
